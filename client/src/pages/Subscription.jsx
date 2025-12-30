@@ -193,7 +193,7 @@ const Subscription = () => {
               <button
                 onClick={handleSubscribe}
                 disabled={isLoading}
-                className="mt-6 w-full px-6 py-3 gradient-yellow text-white rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 shadow-lg shadow-yellow-500/30"
+                className="mt-6 w-lg px-3.5 py-2.5 text-xs gradient-yellow text-white rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50"
               >
                 {isLoading ? 'Processing...' : 'Subscribe Now'}
               </button>

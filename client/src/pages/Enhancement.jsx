@@ -11,7 +11,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 const Enhancement = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { user } = useAuthStore();
+  const { fetchUser } = useAuthStore();
   const [file, setFile] = useState(null);
   const [resume, setResume] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -73,6 +73,13 @@ const Enhancement = () => {
         toast.success('Resume enhanced successfully!');
         setResume(response.data.resume);
         setFile(null);
+
+        await fetchUser();
+      
+      // Navigate to the resume detail page using the resume ID
+      // This ensures the resume is loaded via URL and persists through re-renders
+      const resumeId = response.data.resume._id || response.data.resume.id;
+      navigate(`/enhancement/${resumeId}`, { replace: true });
       }
     } catch (error) {
       if (error.response?.data?.requiresUpgrade) {
