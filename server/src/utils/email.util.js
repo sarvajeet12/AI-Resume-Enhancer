@@ -6,15 +6,12 @@ const getTransporter = () => {
     transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: process.env.EMAIL_PORT || 587, // Default to port 587 if not specified
-      secure: false, // Use TLS
+      secure: false,
+      requireTLS: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-      connectionTimeout: 10000, // 10 seconds
-      socketTimeout: 10000, // 10 seconds
-      debug: true, // Enable debugging
-      logger: true, // Enable logging
     });
   }
   return transporter;
@@ -23,7 +20,7 @@ const getTransporter = () => {
 export const sendOTP = async (email, otp) => {
   try {
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: 'Sarvajeet <sarvajeetshahktn@gmail.com>',
       to: email,
       subject: 'Your OTP for Resume Enhancer',
       html: `
