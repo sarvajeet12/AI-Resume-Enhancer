@@ -161,11 +161,11 @@ const Login = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center">
-                  <div className="text-xl sm:text-3xl font-bold text-white">10K+</div>
+                  <div className="text-xl sm:text-3xl font-bold text-white">10+</div>
                   <div className="text-xs sm:text-sm text-white text-opacity-70">Active Users</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-3xl font-bold text-white">50K+</div>
+                  <div className="text-xl sm:text-3xl font-bold text-white">15+</div>
                   <div className="text-xs sm:text-sm text-white text-opacity-70">Profiles Enhanced</div>
                 </div>
                 <div className="text-center">
