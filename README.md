@@ -276,10 +276,6 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 🙏 Acknowledgments
 
 - Google Gemini AI
