@@ -67,7 +67,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 
 - Node.js (v18 or higher)
 - MongoDB (local or Atlas)
-- Gmail account for OTP emails
+- Brevo account for OTP emails
 - Google Gemini API key
 - Razorpay account (for subscriptions)
 
@@ -217,25 +217,6 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
   }
 }
 ```
-
-## 🎨 UI Design
-
-- **Colors:**
-
-  - Body Background: `#1a1a1a`
-  - Nav Background: `#262626`
-  - Button Background: `#170A5`
-  - Text Primary: `#e6e6e6`
-  - White for headings
-
-- **Typography:**
-
-  - H1: `text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold`
-  - H2: `text-2xl sm:text-3xl md:text-4xl font-semibold`
-  - H3: `text-xl sm:text-2xl font-semibold`
-  - Body: `text-base font-normal`
-
-- **Layout:** `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`
 
 ## 🔒 Security Features
 
