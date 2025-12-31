@@ -32,7 +32,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - Express
 - MongoDB + Mongoose
 - JWT + Refresh Token Authentication
-- Axios
+- Axios for (Brevo)
 - Google Gemini AI
 - Razorpay (Subscriptions)
 - PDF Parse (Resume Extraction)
@@ -106,10 +106,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
    JWT_REFRESH_SECRET=your-super-secret-refresh-key
    JWT_EXPIRE=15m
    JWT_REFRESH_EXPIRE=7d
-   EMAIL_HOST=smtp.gmail.com
-   EMAIL_PORT=587
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASS=your-app-password
+   BREVO_API_KEY=brevo_api_key
    GEMINI_API_KEY=your-gemini-api-key
    RAZORPAY_KEY_ID=your-razorpay-key-id
    RAZORPAY_KEY_SECRET=your-razorpay-key-secret
