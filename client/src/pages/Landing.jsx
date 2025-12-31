@@ -153,10 +153,10 @@ const Landing = () => {
   ];
 
   const stats = [
-    { number: '10K+', label: 'Resumes Enhanced' },
+    { number: '10+', label: 'Resumes Enhanced' },
     { number: '95%', label: 'ATS Score Improvement' },
     { number: '4.8/5', label: 'User Rating' },
-    { number: '50+', label: 'Countries Served' },
+    { number: '15+', label: 'Satisfied Users' },
   ];
 
   return (

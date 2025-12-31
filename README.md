@@ -16,6 +16,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React 18
 - Vite
 - TailwindCSS
@@ -26,6 +27,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - React Hot Toast (Notifications)
 
 ### Backend
+
 - Node.js
 - Express
 - MongoDB + Mongoose
@@ -35,7 +37,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - Razorpay (Subscriptions)
 - PDF Parse (Resume Extraction)
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
 ```
 .
@@ -72,18 +74,21 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd AI-Resume-Enhancer
    ```
 
 2. **Install Backend Dependencies**
+
    ```bash
    cd server
    npm install
    ```
 
 3. **Install Frontend Dependencies**
+
    ```bash
    cd ../client
    npm install
@@ -92,6 +97,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 4. **Configure Environment Variables**
 
    Create `server/.env`:
+
    ```env
    PORT=5000
    NODE_ENV=development
@@ -111,6 +117,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
    ```
 
    Create `client/.env`:
+
    ```env
    VITE_API_URL=http://localhost:5000/api
    ```
@@ -118,11 +125,13 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 5. **Start the Development Servers**
 
    Backend (from `server` directory):
+
    ```bash
    npm run dev
    ```
 
    Frontend (from `client` directory):
+
    ```bash
    npm run dev
    ```
@@ -134,6 +143,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 ## 📝 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/send-otp` - Send OTP to email
 - `POST /api/auth/verify-otp` - Verify OTP and login
 - `POST /api/auth/refresh-token` - Refresh access token
@@ -141,12 +151,14 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - `GET /api/auth/me` - Get current user
 
 ### Resume
+
 - `POST /api/resume/upload` - Upload and enhance resume
 - `GET /api/resume` - Get all user resumes
 - `GET /api/resume/:id` - Get specific resume
 - `DELETE /api/resume/:id` - Delete resume
 
 ### Subscription
+
 - `GET /api/subscription/plans` - Get available plans
 - `POST /api/subscription/create` - Create subscription
 - `POST /api/subscription/verify` - Verify payment
@@ -154,17 +166,65 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - `POST /api/subscription/cancel` - Cancel subscription
 
 ### Review
+
 - `POST /api/review` - Create review
 - `GET /api/review` - Get all reviews
 - `GET /api/review/stats` - Get review statistics
 
 ### Admin
+
 - `GET /api/admin/dashboard` - Get dashboard stats
 - `GET /api/admin/users` - Get all users
+
+## 📊 API Response Example
+
+### Example: `POST /api/auth/send-otp`
+
+#### Request Body:
+
+```json
+{
+  "email": "user@example.com"
+}
+```
+
+#### Response:
+
+```json
+{
+  "success": true,
+  "message": "OTP sent successfully"
+}
+```
+
+### Example: `POST /api/resume/upload`
+
+#### Request Body:
+
+```json
+{
+  "file": "<base64-encoded-pdf>"
+}
+```
+
+#### Response:
+
+```json
+{
+  "success": true,
+  "data": {
+    "enhancedResume": {
+      "skills": ["JavaScript", "React"],
+      "atsScore": 85
+    }
+  }
+}
+```
 
 ## 🎨 UI Design
 
 - **Colors:**
+
   - Body Background: `#1a1a1a`
   - Nav Background: `#262626`
   - Button Background: `#170A5`
@@ -172,6 +232,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
   - White for headings
 
 - **Typography:**
+
   - H1: `text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold`
   - H2: `text-2xl sm:text-3xl md:text-4xl font-semibold`
   - H3: `text-xl sm:text-2xl font-semibold`
@@ -190,18 +251,21 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 ## 📊 Features in Detail
 
 ### AI Enhancement
+
 - Extracts data from PDF resumes
 - Enhances all sections using Google Gemini AI
 - Calculates ATS compatibility score
 - Provides before/after comparison
 
 ### Subscription Management
+
 - Free tier: 3 enhancements
 - Basic plan: Unlimited enhancements
 - Premium plan: All features + extras
 - Razorpay integration for payments
 
 ### Analytics
+
 - Resume statistics charts
 - ATS score visualization
 - Section distribution analysis
@@ -219,14 +283,9 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 
 This project is licensed under the MIT License.
 
-## 👨‍💻 Author
-
-Built with ❤️ using MERN Stack
-
 ## 🙏 Acknowledgments
 
 - Google Gemini AI
 - Razorpay
 - React Community
 - TailwindCSS
-
