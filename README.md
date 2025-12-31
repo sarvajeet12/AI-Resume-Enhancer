@@ -32,7 +32,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - Express
 - MongoDB + Mongoose
 - JWT + Refresh Token Authentication
-- Nodemailer (OTP Emails)
+- Axios
 - Google Gemini AI
 - Razorpay (Subscriptions)
 - PDF Parse (Resume Extraction)
