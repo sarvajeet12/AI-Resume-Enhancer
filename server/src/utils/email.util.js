@@ -5,7 +5,7 @@ const getTransporter = () => {
   if (!transporter) {
     transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT || 587, // Default to port 587 if not specified
+      port: Number(process.env.EMAIL_PORT) || 587, // Default to port 587 if not specified
       secure: false,
       requireTLS: true,
       auth: {
@@ -16,6 +16,8 @@ const getTransporter = () => {
   }
   return transporter;
 };
+
+
 
 export const sendOTP = async (email, otp) => {
   try {
