@@ -266,6 +266,9 @@ const Login = () => {
                       <p className="text-xs text-white/60 mt-3 text-center">
                         OTP sent to <span className="text-white/80 font-medium">{email}</span>
                       </p>
+                      <p className="text-xs text-white/60 mt-3 text-center">
+                        Didn't receive the OTP? Please check you Spam/Junk folder.
+                      </p>
                     </div>
                     <button
                       type="submit"
