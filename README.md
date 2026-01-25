@@ -6,7 +6,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 ## 🌐 Deployment : https://ai-resume-enhancer-frontend.onrender.com
 
 
-## 🚀 Feature
+## 🚀 Features
 
 - **OTP Authentication** - Secure email-based OTP login
 - **AI Resume Enhancement** - Enhance Projects, Certificates, Achievements, About, Experiences, Skills, Bio, and Summary
