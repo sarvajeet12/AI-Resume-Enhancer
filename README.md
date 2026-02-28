@@ -14,7 +14,7 @@ A full-stack MERN application that uses AI to enhance resumes, optimize ATS scor
 - **Usage Limits** - 3 free enhancements, then upgrade required
 - **Razorpay Subscription** - Seamless subscription management
 - **Visualization & Charts** - Analytics and insights
-- **User Review System** - Rate and revie enhancements
+- **User Review System** - Rate and review enhancements
 - **Admin Panel** - Dashboard for administrators
 
 ## 🛠️ Tech Stack
