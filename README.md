@@ -1,6 +1,6 @@
 # Resume Enhancer - AI-Powered Resume Optimization SaaS
 
-A full-stack MERN application that uses AI to enhance resumes, optimize ATS scores, and help job seekers create compelling resumes.
+A full-stack MERN application that uses AI t enhance resumes, optimize ATS scores, and help job seekers create compelling resumes.
 
 
 ## 🌐 Deployment : https://ai-resume-enhancer-frontend.onrender.com
